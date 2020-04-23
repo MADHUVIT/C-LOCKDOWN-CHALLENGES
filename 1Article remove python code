@@ -1,0 +1,47 @@
+instr=input()
+sinput=instr.lower()
+ind1=0
+ind2=0
+ind3=0
+c=0
+
+
+while 'a' in sinput or 'an' in sinput or 'the' in sinput:
+    if 'an' in sinput:
+        if c==0:
+          ind1=sinput.index('an')
+        else:
+          ind1=sinput.index('an',ind1)
+        instr=instr.replace(instr[ind1:ind1+2],'an')
+        sinput=sinput.replace(sinput[ind1:ind1+2],' ')
+    if 'a' in sinput:
+        if c==0:
+          ind2=sinput.index('a')
+        else:
+          ind2=sinput.index('a',ind12)
+        instr=instr.replace(instr[ind2],'a')
+        sinput=sinput.replace(sinput[ind2],'')
+       
+    if 'the' in sinput:
+        if c==0:
+          ind3=sinput.index('the')
+        else:
+          ind3=sinput.index('the',ind3)
+        instr=instr.replace(instr[ind3:ind3+3],'the')
+        sinput=sinput.replace(sinput[ind3:ind3+3],'   ')
+    c=c+1
+while 'a' in instr or 'an' in instr or 'the' in instr:
+    if 'an' in instr:
+        instr=instr.replace('an','')
+    if 'a' in instr:
+        instr=instr.replace('a','')
+    if 'the' in instr:
+        instr=instr.replace('the','')
+        
+        
+      
+        
+print(instr)
+
+
+        
