@@ -1,2 +1,3 @@
-# C-LOCKDOWN-CHALLENGES
-C-CODING
+# LOCKDOWN-CHALLENGES
+C/python/java codes
+.png file contains questions
