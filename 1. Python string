@@ -1,0 +1,4 @@
+inputstring=input()
+substring=input()
+replacestring=input()
+print(inputstring.replace(substring,replacestring))
